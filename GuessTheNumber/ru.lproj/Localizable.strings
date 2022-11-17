@@ -1,0 +1,23 @@
+"Guess the number 0...100" = "Загадай число 0...100";
+"Enter The Number" = "Загадать число";
+"Attention!" = "Внимание!";
+"Enter the number \n0...100" = "Введите число \n0...100";
+
+"Computer is guessing" = "Угадывает компьютер";
+"My number is ..." = "Мое число ...";
+"Try №" = "Попытка №";
+"Your number is:" = "Мое число:";
+"I think , that It's not true." = "Я думаю, правильная кнопка где-то рядом.";
+
+"Enter The Number " = "Проверить число ";
+"You are guessing" = "Угадывает пользователь";
+"My number is less than yours" = "Мое число меньше";
+"My number is more than yours" = "Мое число больше";
+
+"Main menu" = "Главное меню";
+"Your's tries count: " = "Кол-во попыток пользователя: ";
+"Computer's tries count:" = "Кол-во попыток компьютера:";
+
+"You Win" = "Ты победил";
+"Computer Win" = "Компьютер победил";
+"It's a draw" = "Это ничья";

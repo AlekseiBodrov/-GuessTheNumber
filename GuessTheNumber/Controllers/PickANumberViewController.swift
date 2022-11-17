@@ -12,8 +12,14 @@ final class PickANumberViewController: UIViewController {
         configure()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        numberTextField.placeholder = "Guess the number 0...100".localized()
+    }
+
     override func viewDidLayoutSubviews() {
-        configure()
+        super.viewDidLayoutSubviews()
+        enterNumberButton.titleLabel?.text = "Enter The Number".localized()
     }
 
     //MARK: - IBAction
@@ -30,13 +36,11 @@ private extension PickANumberViewController{
 
     //MARK: - flow funcs
     func configure() {
-        enterNumberButton.titleLabel?.text = "Enter The Number"
 
         numberTextField.becomeFirstResponder()
 
         numberTextField.returnKeyType = UIReturnKeyType.done
         numberTextField.keyboardType = UIKeyboardType.numberPad
-        numberTextField.placeholder = "Guess the number 0...100"
         numberTextField.textAlignment = .center
 
         addTapGestureRecognizer()
@@ -63,7 +67,9 @@ private extension PickANumberViewController{
     }
 
     func showAlert() {
-        let alert = UIAlertController(title: "Attention!", message: "Enter the number \n0...100", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Attention!".localized(),
+                                      message: "Enter the number \n0...100".localized(),
+                                      preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)

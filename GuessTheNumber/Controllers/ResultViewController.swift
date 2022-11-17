@@ -28,7 +28,7 @@ private extension ResultViewController{
 
     //MARK: - flow funcs
     func configure () {
-        mainMenuButton.titleLabel?.text = "Main menu"
+        mainMenuButton.titleLabel?.text = "Main menu".localized()
 
         userNumberOfTriesLabel.textAlignment = .left
         computerNumberOfTriesLabel.textAlignment = .left
@@ -44,9 +44,9 @@ private extension ResultViewController{
         if let userNumberOfTries = Manager.userNumberOfTries,
             let computerNumberOfTries = Manager.computerNumberOfTries {
             Manager.selectWinner()
-            userNumberOfTriesLabel.text = "Your's tries count: \(userNumberOfTries)"
-            computerNumberOfTriesLabel.text = "Computer's tries count: \(computerNumberOfTries)"
-            winnerLabel.text = Manager.winner.rawValue
+            userNumberOfTriesLabel.text = "Your's tries count: ".localized() + "\(userNumberOfTries)"
+            computerNumberOfTriesLabel.text = "Computer's tries count:".localized() + " \(computerNumberOfTries)"
+            winnerLabel.text = Manager.winner.rawValue.localized()
         }
     }
 }

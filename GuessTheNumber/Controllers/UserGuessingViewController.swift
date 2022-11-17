@@ -35,10 +35,10 @@ private extension UserGuessingViewController{
 
     //MARK: - flow funcs
     func configure() {
-        labelMyNumberIs.text = "My number is ..."
+        labelMyNumberIs.text = "My number is ...".localized()
         numberOfTriesLabel.textAlignment = .center
         nameGamerLabel.textAlignment = .center
-        nameGamerLabel.text = "You are guessing"
+        nameGamerLabel.text = "You are guessing".localized()
         labelMyNumberIs.textAlignment = .center
 
         enterNumberTextField.becomeFirstResponder()
@@ -48,9 +48,9 @@ private extension UserGuessingViewController{
     }
 
     func refreshView() {
-        enterNumberButton.titleLabel?.text = "Enter The Number"
+        enterNumberButton.titleLabel?.text = "Enter The Number ".localized()
         guard let numberOfTries = Manager.userNumberOfTries else { return }
-        numberOfTriesLabel.text = "Try №\(numberOfTries)"
+        numberOfTriesLabel.text = "Try №".localized() + "\(numberOfTries)"
     }
 
     func checkValue() {
@@ -67,12 +67,12 @@ private extension UserGuessingViewController{
         print(textInt)
 
         if Manager.computerPickNumber < Manager.userCurrentTryGuess {
-            labelMyNumberIs.text = "My number is less than yours"
+            labelMyNumberIs.text = "My number is less than yours".localized()
             print("<")
         } else if Manager.computerPickNumber == Manager.userCurrentTryGuess {
             presentViewController()
         } else if Manager.computerPickNumber > Manager.userCurrentTryGuess {
-            labelMyNumberIs.text = "My number is more than yours"
+            labelMyNumberIs.text = "My number is more than yours".localized()
             print(">")
         }
 
@@ -89,7 +89,9 @@ private extension UserGuessingViewController{
     }
 
     func showAlert() {
-        let alert = UIAlertController(title: "Attention!", message: "Enter the number \n0...100", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Attention!".localized(),
+                                      message: "Enter the number \n0...100".localized(),
+                                      preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)

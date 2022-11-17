@@ -1,0 +1,23 @@
+"Guess the number 0...100" = "Guess the number 0...100";
+"Enter The Number" = "Enter The Number";
+"Attention!" = "Attention!";
+"Enter the number \n0...100" = "Enter the number \n0...100";
+
+"Computer is guessing" = "Computer is guessing";
+"My number is ..." = "My number is ...";
+"Try №" = "Try №";
+"Your number is:" = "Your number is:";
+"I think , that It's not true." = "I think , that It's not true.";
+
+"Enter The Number " = "Enter The Number ";
+"You are guessing" = "You are guessing";
+"My number is less than yours" = "My number is less than yours";
+"My number is more than yours" = "My number is more than yours";
+
+"Main menu" = "Main menu";
+"Your's tries count: " = "Your's tries count: ";
+"Computer's tries count:" = "Computer's tries count:";
+
+"You Win" = "You Win";
+"Computer Win" = "Computer Win";
+"It's a draw" = "It's a draw";

@@ -57,16 +57,16 @@ private extension ComputerGuessingViewController{
     func configure() {
         numberOfAttemptsLabel.textAlignment = .center
         nameGamerLabel.textAlignment = .center
-        nameGamerLabel.text = "Computer is guessing"
+        nameGamerLabel.text = "Computer is guessing".localized()
         questionLabel.textAlignment = .center
-        myNumberLabel.text = "My number is ..."
+        myNumberLabel.text = "My number is ...".localized()
     }
 
     func refreshView() {
         guard let numberOfTries = Manager.computerNumberOfTries else { return }
-        numberOfAttemptsLabel.text = "Try №\(numberOfTries)"
+        numberOfAttemptsLabel.text = "Try №".localized() + "\(numberOfTries)"
         if let computerCurrentTry = Manager.computerCurrentTry{
-            questionLabel.text = "Your number is: \(String(describing: computerCurrentTry))?"
+            questionLabel.text = "Your number is:".localized() + " \(String(describing: computerCurrentTry))?"
         }
 
         UIButton.configureButton(moreButton, label: ">")
@@ -84,7 +84,9 @@ private extension ComputerGuessingViewController{
     }
 
     func showAlert() {
-        let alert = UIAlertController(title: "Attention!", message: "I think , that It's not true.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Attention!".localized(),
+                                      message: "I think , that It's not true.".localized(),
+                                      preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)

@@ -12,10 +12,6 @@ final class StartViewController: UIViewController {
         configure()
         Manager.setDefaultProperties()
     }
-    
-    override func viewDidLayoutSubviews() {
-        refreshView()
-    }
 
     //MARK: - IBAction
     @IBAction func startButtonPressed(_ sender: UIButton) {
@@ -25,11 +21,6 @@ final class StartViewController: UIViewController {
     //MARK: - flow funcs
     private func configure() {
         nameOfGameLabel.textAlignment = .center
-        nameOfGameLabel.text = "My Awesome Game"
-    }
-
-    private func refreshView() {
-        startGameButton.titleLabel?.text = "Start New Game"
     }
 
     private func presentViewController() {

@@ -38,12 +38,12 @@
                                     <constraint firstAttribute="height" constant="50" id="F5K-TW-m4U"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start New Game"/>
                                 <connections>
                                     <action selector="startButtonPressed:" destination="QnK-TC-8Lg" eventType="touchUpInside" id="WLX-Qz-sPQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kL-Xg-VJv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Awesome Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kL-Xg-VJv">
                                 <rect key="frame" x="20" y="147" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hFT-6K-sfN"/>
